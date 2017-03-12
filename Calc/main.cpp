@@ -14,13 +14,18 @@ int main(int argc, const char * argv[]) {
     int n;
     cin>>n;
 
-    int f=1;
-    for ( int i=1;i<=n;i++)
+    unsigned int f=1;
+    for (int i=1;i<=n;i++)
     {
     f=f*i;
     
     }
-    cout << "Your result is: " << f<<endl;
-   
+    if (n<0){
+        cout<<"you cant put negative number, dumbass!"<<endl;
+    }
+    else {
+        cout << "Your result is: " << f<<endl;
+
+    }
     return 0;
 }
