@@ -10,7 +10,17 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    cout << "Hello, World!\n";
+    cout << "Your number: ";
+    int n;
+    cin>>n;
+
+    int f=1;
+    for ( int i=1;i<=n;i++)
+    {
+    f=f*i;
+    
+    }
+    cout << "Your result is: " << f<<endl;
+   
     return 0;
 }
